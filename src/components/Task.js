@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Task() {
+function Task(props) {
   return (
-    <div>Task</div>
+    <div>
+      <li>{props.text}   <button onClick={() => props.onSelect(props.id)}>Delete</button></li>
+    </div>
   )
 }
 
